@@ -1,27 +1,25 @@
 package example.codeclan.com.godzilla;
+
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
+/**
+ * Created by Kieran on 21/06/2017.
+ */
 
-
-public class SkyScraperTest {
-    SkyScraper skyscraper;
-
+public class CarTest {
+    Car car;
 
     @Before
     public void before(){
-        skyscraper = new SkyScraper("Tower", 911);
+        car = new Car("Sanic", 1234);
     }
 
     @Test
     public void canDie() {
-        assertEquals(skyscraper.die(), "Jet fuel can't melt steel beams");
+        assertEquals(car.die(), "Vrrmmm!");
     }
 
-    }
-
-
-
-
+}
